@@ -5,6 +5,6 @@ module.exports = {
     const {accountId, name, color} = req.body;
     const notification = new Notification({accountId, name, color});
     await notification.save();
-    res.send({message: 'sucess'});
+    res.send({message: 'success'});
   }
 };
